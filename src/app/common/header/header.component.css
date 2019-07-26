@@ -1,0 +1,10 @@
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+
+.nav-item {
+  font-weight: 600;
+  letter-spacing: 3px;
+}
