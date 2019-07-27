@@ -1,11 +1,43 @@
-.jumbotron {
-  background-color: #EBECEE;
+#contact a:hover {
+  text-decoration: none;
+  color: #8f9091;
 }
 
-.jumbotron .name{
-  font-weight:700;
+.jumbotron {
+  background-color: #ebecee;
+  padding: 2rem 1rem;
+}
+
+.jumbotron .name {
+  font-weight: 700;
 }
 
 .container {
   max-width: 45rem;
+}
+
+.border {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #8f9091 !important;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+}
+
+.fade-text {
+  color: #404040;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.valign-middle {
+  vertical-align: middle;
+}
+
+.color-dark {
+  color: #22262a;
 }
