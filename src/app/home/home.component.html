@@ -1,6 +1,6 @@
 <div class="jumbotron jumbotron-fluid">
   <div class="container text-center">
-    <img class="border circle p-2 bg-white" src="../../assets/matt-headshot-bw.jpg">
+    <img class="border circle p-2 bg-white" src="../../assets/matt-headshot-bw.jpg" />
     <h1 class="name">Matt Roberts</h1>
     <p class="lead">Full-stack developer, electronics enthusiest, and lover of all things metal.</p>
   </div>
@@ -9,15 +9,39 @@
   <div class="row">
     <div class="col-sm-9 fade-text">
       About Me
-    </div>    
+    </div>
     <div class="col-sm-3" id="contact">
-      <span class="fade-text">Contact</span>
+      <span class="fade-text ">Contact</span>
       <div>
-        <a href="https://www.linkedin.com/in/matt-roberts-dev/" target="_blank" class="color-dark">
-          <fa-icon [icon]="['fab', 'fa-linkedin']"></fa-icon>
-          LinkedIn
-        </a> 
-      </div>     
+        <ul class="contact-list mt-2">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/matt-roberts-dev/"
+              target="_blank"
+              class="color-dark contact-item"
+            >
+              <fa-icon [icon]="faLinkedin" class="fa-2x contact-item-icon"></fa-icon>
+              <span class="contact-item-text">LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/sweetcrapmatt"
+              target="_blank"
+              class="color-dark contact-item"
+            >
+              <fa-icon [icon]="faFacebookSquare" class="fa-2x contact-item-icon"></fa-icon>
+              <span class="contact-item-text">Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/cheezballs" target="_blank" class="color-dark contact-item">
+              <fa-icon [icon]="faGithub" class="fa-2x contact-item-icon"></fa-icon>
+              <span class="contact-item-text">GitHub</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faFacebookSquare, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +7,10 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+
+  faLinkedin = faLinkedin;
+  faFacebookSquare = faFacebookSquare;
+  faGithub = faGithubSquare;
 
   constructor() { }
 

@@ -41,3 +41,20 @@
 .color-dark {
   color: #22262a;
 }
+
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-item {
+}
+
+.contact-item-icon {
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
+.contact-item-text {
+  vertical-align: middle;
+}
