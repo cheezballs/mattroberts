@@ -6,10 +6,9 @@ import { GuidesComponent } from './guides/guides.component';
 import { ProjectsComponent } from './projects/projects.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'guides', component: GuidesComponent },
   { path: 'projects', component: ProjectsComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ];
 
