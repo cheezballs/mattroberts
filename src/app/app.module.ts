@@ -11,9 +11,11 @@ import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './errors/page-not-found/page-not-found.component';
 import { GuidesComponent } from './guides/guides.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { HireMeComponent } from './hire-me/hire-me.component';
+import { PhotosComponent } from './photos/photos/photos.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeComponent, PageNotFoundComponent, GuidesComponent, ProjectsComponent],
+  declarations: [AppComponent, HeaderComponent, HomeComponent, PageNotFoundComponent, GuidesComponent, ProjectsComponent, HireMeComponent, PhotosComponent],
   imports: [BrowserModule, NgbModule, BrowserAnimationsModule, FontAwesomeModule, AppRoutingModule ],
   providers: [],
   bootstrap: [AppComponent]
