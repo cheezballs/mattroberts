@@ -1,11 +1,10 @@
-FROM node:12.19.0-alpine3.12 AS compile-image
+FROM node:12-alpine AS builder
 
-ENV PATH="./node_modules/.bin:$PATH" 
-
-COPY . ./
-RUN npm install
-RUN ng build --prod
+COPY . ./mattroberts
+WORKDIR /mattroberts
+RUN npm i
+RUN $(npm bin)/ng build --prod
 
 FROM nginx
-#COPY docker/nginx/default.conf /etc/nginx/conf.d/default.conf
-COPY --from=compile-image /opt/ng/dist/app-name /usr/share/nginx/html
+RUN rm -rf /usr/share/nginx/html/*
+COPY --from=builder /mattroberts/dist/mattroberts /usr/share/nginx/html
